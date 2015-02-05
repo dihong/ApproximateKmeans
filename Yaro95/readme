@@ -1,0 +1,18 @@
+/*
+ * This program implements the word sense disambiguation algorithm in:
+ * 	D. Yarowsky, "Unsupervised Word Sense Disambiguation Rivaling Supervised Methods", 1995.
+ * How to use:
+ *	1) train a classifier for word to be disambiguated: uwsd -train /path/to/training/text /path/to/seeds /path/to/classifer word-to-be-disambiguated
+ *	2) Disambiguate the same word for new sentenses:    uwsd -test /path/to/classifer /path/to/ambtext word-to-be-disambiguated
+ * Description:
+ *	/path/to/training/text:     A path of a training file that contains training text for word to be disambiguated, one document (e.g. tweet) per line.
+ *	/path/to/seeds:		    	A path of a seed file. The number of lines in this file is equal to the number of different senses for the word.
+ *				    			Each line contains one or more keywords that ACCURATELY describe the sense at that line.
+ * 	/path/to/classifer:         A path specifies where the classifer (decision rules) will be saved.
+ *	word-to-be-disambiguated:	The word to be disambiguated, e.g. tank or bank.
+ * 	/path/to/ambtext:   		A path to text to be disambiguated.
+ *
+ *
+ * Author: Dihong Gong
+ * Date:  Jan 14, 2015
+ */

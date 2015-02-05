@@ -1,0 +1,13 @@
+/*
+ * This program produces the sense distribution for a given corpus based on algorithm in:
+ * 	D. Yarowsky, "Unsupervised Word Sense Disambiguation Rivaling Supervised Methods", 1995.
+ * Prerequisites: nltk for Python. 
+ * Platform: Linux/Unix
+ * How to use:
+ *	
+ *	1) Prepare a file containing instances (e.g. tweets) with ambiguous word, one line per instance. The name of the file MUST be the same as the word to be disambiguated (e.g. bank).
+ *	2) python sense_dist.py word_to_be_disambiguated
+ *
+ * Author: Dihong Gong
+ * Date:  Feb 2, 2015
+ */
